@@ -33,9 +33,9 @@ async function getWeatherDataByName(cityName) {
   {
     throw new Error({message:"City not found"});
   }
-  const response = cityData.weather;
+  else{const response = cityData.weather;
   response['city'] = cityData.city;
-  return response;
+  return response;}
 }
 
 
